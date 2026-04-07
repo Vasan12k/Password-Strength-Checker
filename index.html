@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberShield Password Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="matrix-bg"></div>
+    <div class="container">
+        <header>
+            <h1>🛡️ CyberShield Password Analyzer</h1>
+            <p class="subtitle">Fortify your digital defenses with advanced password analysis</p>
+        </header>
+
+        <main>
+            <form id="passwordForm" class="analysis-form">
+                <div class="input-group">
+                    <label for="password">Enter Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Type your password..." required>
+                </div>
+
+                <div class="options">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="simulate" name="simulate">
+                        <span class="checkmark"></span>
+                        Enable brute-force simulation
+                    </label>
+                </div>
+
+                <button type="submit" class="analyze-btn">🔍 Analyze Security</button>
+            </form>
+
+            <div id="results" class="results-section" style="display: none;">
+                <div class="result-card" id="strengthResult">
+                    <h3>Password Strength</h3>
+                    <div class="strength-meter">
+                        <div class="strength-bar" id="strengthBar"></div>
+                    </div>
+                    <p id="strengthText"></p>
+                </div>
+
+                <div class="result-card" id="crackResult" style="display: none;">
+                    <h3>Brute-Force Simulation</h3>
+                    <p id="crackText"></p>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>🔒 Secure your accounts | Built for cybersecurity awareness</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

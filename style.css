@@ -1,0 +1,188 @@
+/* Reset and Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Space Mono', monospace;
+    background: #000011;
+    color: #00ffff;
+    overflow-x: hidden;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* Matrix Background */
+.matrix-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.1;
+}
+
+/* Container */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #00ffff;
+    text-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: #87ceeb;
+    opacity: 0.8;
+}
+
+/* Form */
+.analysis-form {
+    background: rgba(0, 20, 40, 0.9);
+    border: 2px solid #00ffff;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.3);
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #00ffff;
+    font-weight: bold;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    background: rgba(0, 0, 0, 0.8);
+    border: 1px solid #00ffff;
+    border-radius: 5px;
+    color: #00ffff;
+    font-size: 1rem;
+    outline: none;
+}
+
+.input-group input:focus {
+    box-shadow: 0 0 10px #00ffff;
+}
+
+/* Checkbox */
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #87ceeb;
+}
+
+.checkbox-label input {
+    margin-right: 10px;
+}
+
+/* Button */
+.analyze-btn {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(45deg, #00ffff, #0080ff);
+    border: none;
+    border-radius: 5px;
+    color: #000011;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.analyze-btn:hover {
+    background: linear-gradient(45deg, #0080ff, #00ffff);
+    box-shadow: 0 0 20px #00ffff;
+    transform: translateY(-2px);
+}
+
+/* Results */
+.results-section {
+    margin-top: 30px;
+}
+
+.result-card {
+    background: rgba(0, 20, 40, 0.9);
+    border: 1px solid #00ffff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+}
+
+.result-card h3 {
+    color: #00ffff;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Strength Meter */
+.strength-meter {
+    width: 100%;
+    height: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.strength-bar {
+    height: 100%;
+    width: 0%;
+    transition: width 0.5s ease, background-color 0.5s ease;
+}
+
+#strengthText {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #87ceeb;
+    opacity: 0.7;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .analysis-form {
+        padding: 20px;
+    }
+}
