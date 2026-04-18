@@ -29,7 +29,7 @@ Do not use it for unauthorized access or malicious activities.
 ---
 
 ##  Author
-**Srinivasan K**  cyber security
+**Srinivasan K**  cyber security ethical hacker 
 Cybersecurity Enthusiast | SOC Analyst Learner | Python Developer  
 
 ---
